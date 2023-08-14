@@ -1,0 +1,28 @@
+<div class="home-header">
+    <div id="welcome" class="welcome-box">
+        <h1>Welcome to Formula Stats!</h1>
+        <h3>Compare stats between F1 seasons, drivers, teams and more!</h3>
+    </div>
+
+    <div class="current-info">
+            <app-race-box class="raceBox" [race]="previousRace" [raceResults]="prevRaceResults" 
+            [fastestLapPrevInfo]="fastestLapPrevInfo" [numOfRaces]="numOfRaces"></app-race-box>
+            <app-race-box class="raceBox" [race]="nextRace" [raceResults]="nextRaceResultsLastSeason" 
+            [fastestLapPrevInfo]="fastestLapNextInfoLastSeason" [numOfRaces]="numOfRaces"
+            [season]="seasonPrev" [prev]=true [raceToDisplay]="next"></app-race-box>
+            <app-schedule-race-box class="raceBox" [nextRace]="nextRace" [numOfRaces]="numOfRaces"></app-schedule-race-box>
+            <app-standings-box class="raceBox" [driverStandings]="currDriverStandings" [teamStandings]="currTeamStandings"></app-standings-box>
+    </div>
+
+    <div id="more-info">
+        <h2>More info</h2>
+        <p>This website uses and open source API to gather stats and is updated as and when the information is added to the API.
+            This is run using the <a href="http://ergast.com/mrd/" target="_blank">Ergast Developer API</a>.
+        </p>
+        <p>This website is developed by Elliott Gregory and is curently a passion project. Any feature suggestions should be opened as an issue on github
+            to be discussed and bug finding and fixes should be published there too. I would appreciate any suggestions and help where possible 😊.
+        </p>
+        <p>For any other enquiries, please contact me via this email [insert email here]</p>
+    </div>
+</div>
+
