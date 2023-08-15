@@ -28,7 +28,7 @@ jobs:
 
     - name: Deploy
       if: success()
-      uses: AhsanAyaz/angular-deploy-gh-pages-actions@1.4
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@[version]
       with:
         github_token: ${{ secrets.TOKEN }}
         deploy_branch: gh-pages
