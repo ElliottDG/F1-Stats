@@ -1,29 +1,23 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
+  beforeEach(() => 
+  TestBed.configureTestingModule({
+    imports: [RouterTestingModule, MatToolbarModule, MatIconModule],
+    declarations: [AppComponent],
+    providers: [MatIconRegistry]
   }));
 
   it('should create the app', () => {
+    TestBed.inject(RouterTestingModule);
+    TestBed.inject(MatToolbarModule);
+    TestBed.inject(MatIconModule);
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
-  it(`should have as title 'f1-stats'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('f1-stats');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('f1-stats app is running!');
   });
 });

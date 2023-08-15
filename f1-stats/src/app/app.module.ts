@@ -14,7 +14,7 @@ import { RaceBoxComponent } from './race-boxes/race-box/race-box.component';
 import { ScheduleRaceBoxComponent } from './race-boxes/schedule-race-box/schedule-race-box.component';
 import { MatTableModule } from '@angular/material/table';
 import { StandingsBoxComponent } from './race-boxes/standings-box/standings-box.component';
-
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -25,7 +25,8 @@ import { StandingsBoxComponent } from './race-boxes/standings-box/standings-box.
     NotFoundComponent,
     RaceBoxComponent,
     ScheduleRaceBoxComponent,
-    StandingsBoxComponent
+    StandingsBoxComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -35,7 +36,8 @@ import { StandingsBoxComponent } from './race-boxes/standings-box/standings-box.
     MatButtonModule,
     MatIconModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    CommonModule
   ],
   providers: [ MatIconRegistry ],
   bootstrap: [ AppComponent ],

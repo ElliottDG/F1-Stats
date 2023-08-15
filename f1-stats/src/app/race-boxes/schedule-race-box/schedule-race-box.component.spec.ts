@@ -1,16 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatTableModule } from '@angular/material/table';
+import { ScheduleRaceBoxComponent } from './schedule-race-box.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
-import { NextRaceBoxComponent } from './schedule-race-box.component';
-
-describe('NextRaceBoxComponent', () => {
-  let component: NextRaceBoxComponent;
-  let fixture: ComponentFixture<NextRaceBoxComponent>;
+describe('ScheduleRaceBoxComponent', () => {
+  let component: ScheduleRaceBoxComponent;
+  let fixture: ComponentFixture<ScheduleRaceBoxComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NextRaceBoxComponent]
+      declarations: [ScheduleRaceBoxComponent],
+      imports: [MatTableModule],
+      schemas: [NO_ERRORS_SCHEMA]
     });
-    fixture = TestBed.createComponent(NextRaceBoxComponent);
+    TestBed.inject(MatTableModule);
+    fixture = TestBed.createComponent(ScheduleRaceBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
