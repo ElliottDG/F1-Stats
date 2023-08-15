@@ -28,8 +28,10 @@ jobs:
 
     - name: Deploy
       if: success()
-      uses: peaceiris/actions-gh-pages@v3
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@1.4
       with:
         github_token: ${{ secrets.TOKEN }}
-        publish_dir: dist/F1-Stats
+        deploy_branch: gh-pages
+        build_configuration: staging
+        angular_dist_build_folder: dist/F1-Stats
         enable_jekyll: true
