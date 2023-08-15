@@ -48,8 +48,8 @@ export class HomeComponent {
     this.f1Api.get('current.json').subscribe((data: any) => { this.numOfRaces = data.MRData?.total; }, (error: any) => {console.log(error);});
     this.f1Api.get('current/last/results.json?limit=3').subscribe((data: any) => { this.prevRaceResults = data?.MRData?.RaceTable?.Races[0];}, (error: any) => {console.log(error);});
     this.f1Api.get('current/last/fastest/1/results.json').subscribe((data: any) => { this.fastestLapPrevInfo = data?.MRData?.RaceTable?.Races[0]?.Results[0];}, (error: any) => {console.log(error);});
-    this.f1Api.get('current/driverStandings.json').subscribe((data: any) => { this.currDriverStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings; console.log(this.currDriverStandings);}, (error: any) => {console.log(error);});
-    this.f1Api.get('current/constructorStandings.json').subscribe((data: any) => { this.currTeamStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.ConstructorStandings; console.log(this.currTeamStandings);}, (error: any) => {console.log(error);});
+    this.f1Api.get('current/driverStandings.json').subscribe((data: any) => { this.currDriverStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings;}, (error: any) => {console.log(error);});
+    this.f1Api.get('current/constructorStandings.json').subscribe((data: any) => { this.currTeamStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.ConstructorStandings;}, (error: any) => {console.log(error);});
     }
   
 }
