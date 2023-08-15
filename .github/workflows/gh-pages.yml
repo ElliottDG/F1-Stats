@@ -33,6 +33,6 @@ jobs:
         github_access_token: ${{ secrets.TOKEN }}
         deploy_branch: gh-pages
         base_href: https://ElliottDG.github.io/F1-Stats/
-        build_configuration: ng build 
+        build_configuration: production 
         angular_dist_build_folder: dist/F1-Stats
   
