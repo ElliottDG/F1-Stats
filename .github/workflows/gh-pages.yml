@@ -34,5 +34,5 @@ jobs:
         deploy_branch: gh-pages
         base_href: /F1-Stats/
         build_configuration: production 
-        angular_dist_build_folder: dist/F1-Stats
+        angular_dist_build_folder: dist/f1-stats
   
