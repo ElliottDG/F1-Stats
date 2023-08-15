@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 import { RaceDisplay } from 'src/app/enums/race-display';
 import { F1ApiService } from '../services/f1-api.service';
 import { forkJoin, switchMap, map } from 'rxjs';
-import {Buffer} from 'buffer';
+
 
 
 @Component({
