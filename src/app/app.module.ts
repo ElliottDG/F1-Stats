@@ -15,6 +15,8 @@ import { ScheduleRaceBoxComponent } from './race-boxes/schedule-race-box/schedul
 import { MatTableModule } from '@angular/material/table';
 import { StandingsBoxComponent } from './race-boxes/standings-box/standings-box.component';
 import { CommonModule } from '@angular/common';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     HttpClientModule,
     MatTableModule,
-    CommonModule
+    CommonModule,
+    MatSidenavModule,
+    FlexLayoutModule,
   ],
   providers: [ MatIconRegistry ],
   bootstrap: [ AppComponent ],
