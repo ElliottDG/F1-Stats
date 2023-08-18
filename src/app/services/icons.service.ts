@@ -12,7 +12,7 @@ export class IconsService {
     private domSanitizer: DomSanitizer) { }
 
   public registerIcons(): void {
-      this.loadIcons(Object.values(Icons), '../assets/svg');
+      this.loadIcons(Object.values(Icons), './assets/svg');
   }
 
   private loadIcons(iconKeys: string[], iconUrl: string): void {
