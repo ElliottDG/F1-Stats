@@ -1,4 +1,19 @@
 # F1Stats
+
+![](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
+![](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
+![](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![](https://img.shields.io/github/license/ElliottDG/F1-Stats.svg)
+![](https://img.shields.io/github/issues/ElliottDG/F1-Stats.svg)
+![](https://img.shields.io/github/last-commit/ElliottDG/F1-Stats.svg)
+![](https://img.shields.io/website-up-down-green-red/http/elliottdg.github.io/F1-Stats)
+
 ---
 
 Simple stat comparison site for f1 fans. This project is currently only a front-end project using a 3rd party API. Future features could lead to implementation of a backend.
