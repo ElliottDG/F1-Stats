@@ -10,7 +10,13 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    }
+ }
 .mat-sidenav-container{
     min-height: 93vh !important;
-    }
+}
+.position-fixed{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index:1000;
+}
