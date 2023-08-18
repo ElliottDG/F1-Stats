@@ -11,7 +11,7 @@
 ![](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![](https://img.shields.io/github/license/ElliottDG/F1-Stats.svg)
 ![](https://img.shields.io/github/issues/ElliottDG/F1-Stats.svg)
-![](https://img.shields.io/github/last-commit/ElliottDG/F1-Stats.svg)
+![](https://img.shields.io/github/issues-pr-closed/ElliottDG/F1-Stats.svg)
 ![](https://img.shields.io/website-up-down-green-red/http/elliottdg.github.io/F1-Stats)
 
 ---
