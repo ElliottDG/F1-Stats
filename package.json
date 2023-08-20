@@ -23,7 +23,6 @@
     "@angular/platform-browser": "^16.1.7",
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
-    "@types/node": "^20.5.1",
     "flag-icons": "^6.10.0",
     "i18n-iso-countries": "^7.6.0",
     "rxjs": "~7.8.0",
