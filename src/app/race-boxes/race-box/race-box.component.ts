@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { RaceDisplay } from 'src/app/enums/race-display';
 import { IconsService } from 'src/app/services/icons.service';
+import * as i18IsoCountries from 'i18n-iso-countries';
 
 @Component({
   selector: 'app-race-box',
@@ -29,7 +30,7 @@ export class RaceBoxComponent {
   }
 
   ngOnInit(): void {
-    
+    i18IsoCountries.registerLocale(require("i18n-iso-countries/langs/en.json"));
   }
 
   /*
@@ -55,9 +56,11 @@ export class RaceBoxComponent {
  this.dataSource = this.raceResults?.Results;
  this.date = this.race?.date;
  this.isDataAvailable = true;
+ this.gpFlag = i18IsoCountries.getSimpleAlpha2Code(this.race?.Circuit?.Location?.country, 'en');
  if (this.prev === true) {
   this.podium += ' ' + this.season;
   this.fastestLap += ' ' + this.season;
+  this.gpFlag = i18IsoCountries.getSimpleAlpha2Code(this.race?.Circuit?.Location?.country, 'en');
   this.prev = false;
  }
  }
