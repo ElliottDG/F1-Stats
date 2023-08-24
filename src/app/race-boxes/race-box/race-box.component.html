@@ -1,19 +1,23 @@
-<div class="raceBox" *ngIf="isDataAvailable">
-    <h1>{{raceToDisplay}} - {{gpName}}!</h1>
+<mat-card class="raceBox" *ngIf="isDataAvailable">
+    <mat-card-content>
+    <mat-card-title>{{raceToDisplay}} - {{gpName}}!</mat-card-title>
+    <mat-card-subtitle><span class="fi fi-{{gpFlag | lowercase}}"></span> {{trackName}}</mat-card-subtitle>
+    <mat-divider></mat-divider>
     <div class="raceInfo">
         <div class="raceInfoLeft">
-            <h2>Track</h2>
-                <p><span class="fi fi-{{gpFlag | lowercase}}"></span> {{trackName}}</p>
             <h2>Round</h2>
                 <p>{{round}}</p>
             <h2>Date</h2>
                 <p>{{date | date : 'longDate'}}</p>
             <h2>{{ fastestLap }}</h2>
                 <p>{{fastestLapDriver}} - {{fastestLapTime}}</p>
+            <button mat-raised-button class="mat-primary" [routerLink]="'/ComingSoon'" routerLinkActive="active">
+                Race info!
+            </button>
         </div>
         <div class="raceInfoRight">
             <h2>{{ podium }}</h2>
-            <table mat-table [dataSource]="dataSource">
+            <table mat-table class="mat-table" [dataSource]="dataSource">
                   <ng-container matColumnDef="position">
                     <th mat-header-cell *matHeaderCellDef> P </th>
                     <td mat-cell *matCellDef="let element"> {{element?.position}}  </td>
@@ -30,11 +34,9 @@
                   </ng-container>
 
                   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                  <tr mat-row class="mat-row mat-primary" *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
-            <h2></h2>
-            <button mat-raised-button [routerLink]="'/ComingSoon'" routerLinkActive="active">
-                See more race info!
-            </button>
         </div>
-</div>
+        </div>
+    </mat-card-content>
+    </mat-card>

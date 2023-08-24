@@ -2,10 +2,19 @@
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    padding: 0.6.25rem;
-    border: 0.063rem solid #000000;
+    padding: 1rem;
     border-radius: 0.313rem;
-    background-color: #ffffff;
+    text-align: center;
+}
+
+.mat-table
+{
+  background-color:transparent!important;  
+}
+
+.mat-divider {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 .raceBox h1{
