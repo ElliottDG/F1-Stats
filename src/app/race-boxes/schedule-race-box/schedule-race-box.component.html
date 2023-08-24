@@ -1,7 +1,6 @@
 <mat-card class="raceBox" *ngIf="isDataAvailable">
   <mat-card-content>
-    <h1> {{gpName}} Schedule!</h1>
-    
+    <mat-card-title> {{gpName}} Schedule!</mat-card-title>
         <div class="raceScedule">
             <table mat-table class="mat-table" [dataSource]="dataSource">
                 <ng-container matColumnDef="session">
