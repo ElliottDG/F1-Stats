@@ -9,14 +9,20 @@ import { IconsService } from './services/icons.service';
 export class AppComponent {
   constructor(private iconsService: IconsService,) {
   }
-
-  nextRace: any;
-  previousRace: any;
-  prevRaceResults: any;
-  currSeason: any;
+  isDark: boolean = true;
 
   ngOnInit(): void {
     this.iconsService.registerIcons();
+    this.setTheme();
   }
   title = 'f1-stats';
+
+  toggleTheme(): void {
+    this.isDark = !this.isDark;
+    this.setTheme();
+  }
+
+  setTheme(): void {
+    document.documentElement.classList.toggle('dark-theme', this.isDark);
+  }
 }

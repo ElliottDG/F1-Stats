@@ -1,10 +1,8 @@
-
-
-    .home-header {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
+.home-header {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 
 
 @media (min-width:44.75rem ) {
@@ -14,6 +12,11 @@
         justify-content: center;    
         text-align: center;
     }
+}
+
+.mat-table
+{
+  background-color:transparent!important;  
 }
 
 .more-info {
