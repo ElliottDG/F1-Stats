@@ -1,7 +1,9 @@
-<div class="raceBox" *ngIf="isDataAvailable">
+<mat-card class="raceBox" *ngIf="isDataAvailable">
+  <mat-card-content>
     <h1> {{gpName}} Schedule!</h1>
+    
         <div class="raceScedule">
-            <table mat-table [dataSource]="dataSource">
+            <table mat-table class="mat-table" [dataSource]="dataSource">
                 <ng-container matColumnDef="session">
                     <th mat-header-cell *matHeaderCellDef> Session </th>
                     <td mat-cell *matCellDef="let element"> {{element.session}} </td>
@@ -16,7 +18,8 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>                
         </div>
-        <div class="buttons">
-          <button mat-raised-button [routerLink]="'/ComingSoon'" routerLinkActive="active">See more race info!</button>
-        </div>
-</div>
+        <mat-card-actions>
+          <button mat-raised-button class="mat-primary" [routerLink]="'/ComingSoon'" routerLinkActive="active">See more race info!</button>
+        </mat-card-actions>
+      </mat-card-content>
+</mat-card>

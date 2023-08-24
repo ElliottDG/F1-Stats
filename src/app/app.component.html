@@ -1,16 +1,16 @@
-<mat-toolbar class="position-fixed">
+<mat-toolbar class="position-fixed mat-primary">
   <div fxShow="true" fxHide.gt-sm="true">
     <button mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
   </div>
-  <span>Formula Stats</span>
+  <div class="mat-headline">Formula Stats</div>
   <div fxShow="true" fxHide.lt-md="true">
-    <button mat-flat-button class="navBarButton" routerLink="/Home" routerLinkActive="active" >Home</button>
-    <button mat-flat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Driver Stats</button>
-    <button mat-flat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Team Stats</button>
-    <button mat-flat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Track stats</button>
-    <button mat-flat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Head to Head</button>
+    <button mat-button class="navBarButton" routerLink="/Home" routerLinkActive="active" >Home</button>
+    <button mat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Driver Stats</button>
+    <button mat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Team Stats</button>
+    <button mat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Track stats</button>
+    <button mat-button class="navBarButton" routerLink="/ComingSoon" routerLinkActive="active" >Head to Head</button>
   </div>
   <span class="spacer"></span>
     <a mat-icon-button aria-label="github" href="https://github.com/ElliottDG/F1-Stats" target="_blank">

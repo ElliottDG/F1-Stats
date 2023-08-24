@@ -17,6 +17,8 @@ import { StandingsBoxComponent } from './race-boxes/standings-box/standings-box.
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
@@ -42,6 +44,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CommonModule,
     MatSidenavModule,
     FlexLayoutModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [ MatIconRegistry ],
   bootstrap: [ AppComponent ],
