@@ -5,18 +5,18 @@
     <mat-divider></mat-divider>
     <div class="raceInfo">
         <div class="raceInfoLeft">
-            <h2>Round</h2>
+            <h3>Round</h3>
                 <p>{{round}}</p>
-            <h2>Date</h2>
+            <h3>Date</h3>
                 <p>{{date | date : 'longDate'}}</p>
-            <h2>{{ fastestLap }}</h2>
+            <h3>{{ fastestLap }}</h3>
                 <p>{{fastestLapDriver}} - {{fastestLapTime}}</p>
             <button mat-raised-button class="mat-primary" [routerLink]="'/ComingSoon'" routerLinkActive="active">
                 Race info!
             </button>
         </div>
         <div class="raceInfoRight">
-            <h2>{{ podium }}</h2>
+            <h3>{{ podium }}</h3>
             <table mat-table class="mat-table" [dataSource]="dataSource">
                   <ng-container matColumnDef="position">
                     <th mat-header-cell *matHeaderCellDef> P </th>
