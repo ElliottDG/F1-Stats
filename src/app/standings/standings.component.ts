@@ -26,4 +26,9 @@ export class StandingsComponent {
    
   }
 
+  changeStandings(): void {
+    this.f1Api.get(`${this.season}/driverStandings.json`).subscribe((data: any) => { this.driverStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.DriverStandings;console.log(this.driverStandings)}, (error: any) => {console.log(error);});
+    this.f1Api.get(`${this.season}/constructorStandings.json`).subscribe((data: any) => { this.teamStandings = data?.MRData?.StandingsTable?.StandingsLists[0]?.ConstructorStandings;}, (error: any) => {console.log(error);});
+  }
+
 }

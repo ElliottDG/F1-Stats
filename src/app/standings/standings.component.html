@@ -1,14 +1,14 @@
 <div class="standingsPage">
     <mat-card class="standingsHeader">
         <mat-card-header>
-            <mat-card-title>Options</mat-card-title>
+            <mat-card-title class="optionT">Options</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <mat-form-field>
-                Season<mat-select [(value)]="season">
+            <p><mat-form-field>
+                <mat-label>season</mat-label><mat-select [(value)]="season" (selectionChange)="changeStandings()">
                     <mat-option *ngFor="let number of yearArray" [value]="number">{{number}}</mat-option>
                 </mat-select>
-            </mat-form-field>
+            </mat-form-field></p>
         </mat-card-content>
     </mat-card>
     <div class="standingsContainer">
