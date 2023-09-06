@@ -19,6 +19,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
+import { StandingsComponent } from './standings/standings.component';
+import { AllStandingsComponent } from './standings/all-standings/all-standings.component';
+import { MatSelectModule } from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 @NgModule({
@@ -30,6 +35,8 @@ import { MatDividerModule } from '@angular/material/divider';
     RaceBoxComponent,
     ScheduleRaceBoxComponent,
     StandingsBoxComponent,
+    StandingsComponent,
+    AllStandingsComponent,
     
   ],
   imports: [
@@ -45,7 +52,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatSidenavModule,
     FlexLayoutModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSelectModule,
+    MatFormFieldModule,
   ],
   providers: [ MatIconRegistry ],
   bootstrap: [ AppComponent ],
