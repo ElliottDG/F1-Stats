@@ -1,0 +1,23 @@
+
+@media (min-width:50rem ) {
+    .standingsContainer {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+.standingsBox ::ng-deep .standingsCard {
+    margin: 2rem;
+}
+
+.standingsHeader {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.optionT {
+    margin-bottom: 1rem;
+}
+
