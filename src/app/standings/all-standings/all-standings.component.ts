@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Input } from '@angular/core';
+import { SpinnerService } from 'src/app/services/spinner.service';
 
 @Component({
   selector: 'app-all-standings',
@@ -7,6 +8,8 @@ import { Input } from '@angular/core';
   styleUrls: ['./all-standings.component.scss']
 })
 export class AllStandingsComponent {
+
+  constructor (public spinnerService: SpinnerService) { }
 
   displayedColumns: string[] = ['position', 'name', 'points'];
   dataSource: any;

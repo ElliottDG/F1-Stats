@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import { RaceDisplay } from 'src/app/enums/race-display';
 import { F1ApiService } from '../services/f1-api.service';
+import { SpinnerService } from '../services/spinner.service';
 import { forkJoin, switchMap, map } from 'rxjs';
 
 
@@ -13,7 +14,7 @@ import { forkJoin, switchMap, map } from 'rxjs';
 
 
 export class HomeComponent {
-  constructor (private f1Api: F1ApiService,) { }
+  constructor (private f1Api: F1ApiService, public spinnerService: SpinnerService) { }
 
   next = RaceDisplay.next;
   previous = RaceDisplay.previous;

@@ -1,4 +1,7 @@
-<div class="home-header">
+<div *ngIf="spinnerService.visibility | async" class="spinner">
+    <mat-spinner></mat-spinner>
+</div>
+<div [hidden]="spinnerService.visibility| async" class="home-header">
     <div id="welcome" class="welcome-box">
         <h1>Welcome to Formula Stats!</h1>
         <h3>Compare stats between F1 seasons, drivers, teams and more!</h3>
@@ -25,4 +28,5 @@
         <p>For any other enquiries, please contact me via this email [insert email here]</p>
     </div>
 </div>
+
 
