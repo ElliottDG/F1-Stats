@@ -23,6 +23,9 @@ import { StandingsComponent } from './standings/standings.component';
 import { AllStandingsComponent } from './standings/all-standings/all-standings.component';
 import { MatSelectModule } from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { CustomHttpInterceptor } from './custom-providers/http-interceptor';
+import { MatProgressSpinnerModule}  from '@angular/material/progress-spinner';
 
 
 
@@ -55,8 +58,14 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatDividerModule,
     MatSelectModule,
     MatFormFieldModule,
+    MatProgressSpinnerModule
   ],
-  providers: [ MatIconRegistry ],
+  providers: [ MatIconRegistry,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: CustomHttpInterceptor,
+      multi: true
+    }],
   bootstrap: [ AppComponent ],
 })
 export class AppModule { }
