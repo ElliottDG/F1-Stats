@@ -8,7 +8,7 @@
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
-![](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![](https://img.shields.io/badge/Maintained%3F-no-red.svg)
 ![](https://img.shields.io/github/license/ElliottDG/F1-Stats.svg)
 ![](https://img.shields.io/github/issues/ElliottDG/F1-Stats.svg)
 ![](https://img.shields.io/github/issues-pr-closed/ElliottDG/F1-Stats.svg)
